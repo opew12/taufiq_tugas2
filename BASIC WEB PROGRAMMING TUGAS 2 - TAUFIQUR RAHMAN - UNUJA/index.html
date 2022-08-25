@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taufiqur Rahman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="bg.jpg">
+    <h1>FORM REGISTRASI</h1>
+<div class="main">
+    <form action="#">
+        <div class="input">
+            <div item>
+                <label for="nama">Nama</label>
+                <input type="text" nama="nama" id="nama">
+            </div>
+            <div item>
+                <label for="nim">Nim</label>
+                <input type="text" nim="nim" id="nim">
+            </div>
+            <div>   
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" rows="6" cols="36">
+                </textarea>
+            </div>
+    <div class="input_field">
+            <div>
+                <label for="jenis_kelamin">Jenis_Kelamin:</label>
+
+                <input type="radio" id="lk" name="jenis_kelamin" value="lk">
+                <label for="lk">Laki-laki</label><br>
+                <input type="radio" id="pr" name="jenis_kelamin" value="pr">
+                <label for="pr">Perempuan</label><br>
+            </div>
+    <div class="costum_select">
+        <div>
+            <label for="jurusan">Jurusan:</label>
+
+            <select name="jurusan" id="jurusan">
+            <option value="ok"></option>
+            <option value="ti">Teknologi Informasi</option>
+            <option value="if">Teknik Informatika</option>
+            <option value="si">Sistem Informasi</option>
+            <option value="te">Teknik Eletro</option>
+            </select>
+        </div>
+    </div>
+    </div>
+    </form>
+    <button type="button">Submit</button>
+</div>
+</div>
+
+<h2>DATA MAHASISWA</h2>
+<div class="table">
+    <table>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Nim</th>
+          <th>Alamat</th>
+          <th>Jenis Kelamin</th>
+          <th>Jurusan</th>
+        </tr>
+      </table>
+</div>
+    
+    <script>
+function submitbuttonfunction(){
+                if(inputnama.value == ""){
+                    return alert("Nama tidak boleh kosong");
+                }
+                if(inputnim.value == ""){
+                    return alert ("Nim tidak boleh kosong");
+                }
+                if(inputalamat.value == ""){
+                    return alert ("Alamat tidak boleh kosong");
+                }
+                if(inputjenis_kelamin.value == ""){
+                    return alert ("Pilih jenis kelamin");
+                }
+                if(inputjurusan.value == ""){
+                    return alert ("Pilih Jurusan");
+                }
+                if(confirm("udah lengkap semua ya?")){
+                    outputnama.innerText = inputfirstname.
+                    value + " " + inputlastname.value;
+                    outputkota.innerText = inputkota.
+                    value;
+                    return alert("Terima Kasih")
+                }
+              }
+    </script>
+</body>
+</html>
